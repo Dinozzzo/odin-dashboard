@@ -15,7 +15,7 @@
 /* SIDEBAR */
 
 .sidebar {
-  padding-top: 30px;
+  padding-top: 40px;
   background-color: rgb(17, 108, 220);
   grid-row: 1 / -1;
   grid-column: 1 / 2;
@@ -25,18 +25,19 @@
 .sidebar-content {
   color: white;
   display: grid;
-  grid-template-rows: 100px 400px 200px;
+  grid-template-rows: 100px 350px 200px;
 }
 
 h1 {
   font-size: 35px;
   font-weight: bold;
   text-transform: uppercase;
+  transform: scaleY(1.2);
 }
 
 .element {
   display: flex;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .element a {
@@ -64,6 +65,29 @@ ul {
   background-color: rgb(226, 226, 239);
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+}
+
+.top-header {
+  grid-row: 1 / 2;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.searchbar {
+  grid-column: 1 / 2;
+  background-color: blueviolet;
+}
+
+.loginbar {
+  grid-column: 2 / 3;
+  background-color: green;
+}
+
+.bot-header {
+  grid-row: 2 / 3;
 }
 
 /* CONTAINER */
